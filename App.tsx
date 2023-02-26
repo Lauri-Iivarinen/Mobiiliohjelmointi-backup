@@ -14,6 +14,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { createNativeStackNavigator } from'@react-navigation/native-stack';
 import CalcHistory from './components/CalcHistory';
+import Navigation from './components/Navigation';
 
 //Project used in class + tasks given in class
 
@@ -23,10 +24,8 @@ export default function App() {
   const Stack = createNativeStackNavigator()
 
   return (
-    <View>
-
-    <MapExample></MapExample>
-
+    <View style={{ flex: 1 }}>
+      <Navigation></Navigation>
     {/*
     <NavigationContainer>
 
